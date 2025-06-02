@@ -1,0 +1,28 @@
+@media print {
+  @page {
+    margin: 0; /* Removes default margins */
+  }
+  body {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+ul.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.custom-list li::before {
+  content: "- "; /* Adds a dash before each list item */
+  font-weight: bold;
+}
+.a4{
+  width: 775px;
+
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+body, html {
+  background: transparent !important;
+}

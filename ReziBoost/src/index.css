@@ -1,0 +1,93 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './../public/loader.css';
+.a4{
+    font-family: 'Times New Roman', Times, serif;
+}
+.pointer{
+    cursor: pointer;
+}
+@media (min-width: 768px) { /* md breakpoint */
+    .custom-width-md {
+      width: 400px;
+    }
+  }
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  
+    #resume {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .light-gradient {
+    background: linear-gradient(135deg, #d2c198, #fcccc2) !important;
+  }
+  /* Custom Background Gradient */
+.custom-gradient {
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* Light Blue Gradient */
+}
+
+/* Rocket Animation */
+.rocket-icon {
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+/* Form Card Styling */
+.form-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+/* Improve Readability */
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+/* Ensure dropdown stays fixed */
+.dropdown-menu {
+  position: absolute !important;
+  top: 50px;
+  right: 10px;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Show dropdown when toggled */
+.show {
+  display: block;
+}
+
+/* Navbar fixed to top */
+.navbar {
+  z-index: 1050;
+}
